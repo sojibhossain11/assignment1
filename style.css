@@ -60,13 +60,13 @@ body {
 }
 
 .conteiner .col {
-    background-color: antiquewhite;
+    background-color: rgb(252, 238, 219);
     height: 100Px;
     width: 150Px;
     float: left;
     margin: 50px;
     line-height: 100px;
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -77,3 +77,57 @@ body {
     margin-top: 50px;
 
 }
+
+.holding-container {
+    max-width: 900px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+.internal-container-1 {
+    flex: 1;
+    background: rgb(152, 147, 199);
+    padding: 30px;
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    box-shadow: 10px 10px 10px;
+}
+
+.internal-container-1 h1 {
+    font-size: 20px;
+}
+
+.internal-conteinar-2 {
+    flex: 1;
+    background: pink;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    box-shadow: 10px 10px 10px;
+}
+
+.internal-container-2 h1 {
+    font-size: 20px;
+}
+
+.internal-conteinar-3 {
+    flex: 1;
+    background: rgb(168, 255, 197);
+    padding: 30px;
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    box-shadow: 10px 10px 10px;
+}
+
+.internal-container-3 h1 {
+    font-size: 20px;
+
+    @media screen and (max-width: 768px; ) {
+        .holding-container {
+            flex-direction: column-reverse;
+        }
+    }
